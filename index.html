@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Escapotato 2020</title>
+	<link rel="icon" type="image/png" href="https://favicon-generator.org/favicon-generator/htdocs/favicons/2014-12-13/9d5afd180903a3f54678c146a3a1e605.ico"/>
+	<link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		function SHA256(r){var n=8,t=0;function e(r,n){var t=(65535&r)+(65535&n);return(r>>16)+(n>>16)+(t>>16)<<16|65535&t}function o(r,n){return r>>>n|r<<32-n}function u(r,n){return r>>>n}function a(r,n,t){return r&n^~r&t}function f(r,n,t){return r&n^r&t^n&t}function c(r){return o(r,2)^o(r,13)^o(r,22)}function i(r){return o(r,6)^o(r,11)^o(r,25)}function h(r){return o(r,7)^o(r,18)^u(r,3)}return function(r){for(var n=t?"0123456789ABCDEF":"0123456789abcdef",e="",o=0;o<4*r.length;o++)e+=n.charAt(r[o>>2]>>8*(3-o%4)+4&15)+n.charAt(r[o>>2]>>8*(3-o%4)&15);return e}(function(r,n){var t,C,g,A,d,v,S,l,m,y,w,b=new Array(1116352408,1899447441,3049323471,3921009573,961987163,1508970993,2453635748,2870763221,3624381080,310598401,607225278,1426881987,1925078388,2162078206,2614888103,3248222580,3835390401,4022224774,264347078,604807628,770255983,1249150122,1555081692,1996064986,2554220882,2821834349,2952996808,3210313671,3336571891,3584528711,113926993,338241895,666307205,773529912,1294757372,1396182291,1695183700,1986661051,2177026350,2456956037,2730485921,2820302411,3259730800,3345764771,3516065817,3600352804,4094571909,275423344,430227734,506948616,659060556,883997877,958139571,1322822218,1537002063,1747873779,1955562222,2024104815,2227730452,2361852424,2428436474,2756734187,3204031479,3329325298),p=new Array(1779033703,3144134277,1013904242,2773480762,1359893119,2600822924,528734635,1541459225),B=new Array(64);r[n>>5]|=128<<24-n%32,r[15+(n+64>>9<<4)]=n;for(var D=0;D<r.length;D+=16){t=p[0],C=p[1],g=p[2],A=p[3],d=p[4],v=p[5],S=p[6],l=p[7];for(var E=0;E<64;E++)B[E]=E<16?r[E+D]:e(e(e(o(w=B[E-2],17)^o(w,19)^u(w,10),B[E-7]),h(B[E-15])),B[E-16]),m=e(e(e(e(l,i(d)),a(d,v,S)),b[E]),B[E]),y=e(c(t),f(t,C,g)),l=S,S=v,v=d,d=e(A,m),A=g,g=C,C=t,t=e(m,y);p[0]=e(t,p[0]),p[1]=e(C,p[1]),p[2]=e(g,p[2]),p[3]=e(A,p[3]),p[4]=e(d,p[4]),p[5]=e(v,p[5]),p[6]=e(S,p[6]),p[7]=e(l,p[7])}return p}(function(r){for(var t=Array(),e=(1<<n)-1,o=0;o<r.length*n;o+=n)t[o>>5]|=(r.charCodeAt(o/n)&e)<<24-o%32;return t}(r=function(r){r=r.replace(/\r\n/g,"\n");for(var n="",t=0;t<r.length;t++){var e=r.charCodeAt(t);e<128?n+=String.fromCharCode(e):e>127&&e<2048?(n+=String.fromCharCode(e>>6|192),n+=String.fromCharCode(63&e|128)):(n+=String.fromCharCode(e>>12|224),n+=String.fromCharCode(e>>6&63|128),n+=String.fromCharCode(63&e|128))}return n}(r)),r.length*n))}function encrypt(w,k){var encryptWord="";for(var i=0;i<w.length;i++){encryptWord+=alph.charAt((alph.indexOf(w.charAt(i))+alph.indexOf(k.charAt(i%k.length)))%alph.length)}return encryptWord}function decrypt(w,k){var decryptWord="";for(var i=0;i<w.length;i++){decryptWord+=alph.charAt(((alph.indexOf(w.charAt(i))+alph.length)-alph.indexOf(k.charAt(i%k.length)))%alph.length)}return decryptWord}var alph="4J651Dq)VècxëNgjA3h MfTCPH.sU;uopOa70wSz2iéEùâ89v:-àen,ç♥!trêFLôdbI(mZlB'yk";
+	</script>
+	<style>
+		/* main page styles */
+		*{ margin: 0; padding: 0; }
+		body {
+			background-image: url("./img/pat1.png");
+			font-family: "Sriracha";
+			color: #5b2631;
+		} div.container {
+			width: 75%;
+			margin: auto;
+			margin-top: 50px; margin-bottom: 50px;
+			background-color: rgba(255,255,255,0.78);
+			padding: 20px 5%; border-radius: 50px;
+		} h1 {
+			text-align: center;
+			border-bottom: 2px solid #333;
+			font-size: 48px;
+			padding-bottom: 0px;
+			margin-bottom: 30px;
+		} p#explain {
+			font-size: 20px;
+			text-align: justify;
+			margin-bottom: 50px;
+		} input[type="text"]#pwdinp, input.imginp {
+			font-size: 20px; font-family: "Sriracha";
+			color: #5b2631;
+			width: 60%;
+			margin-left: 20%;
+			border: 1px solid bottom;
+			border-radius: 5px;
+		} p#pwdout {
+			width: 60%; margin-left: 20%;
+		} button#btnfwd {
+			font-size: 20px; font-family: "Sriracha";
+			color: #fff;
+			box-shadow: 1px 2px 0px 0px #3dc21b;
+			background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+			background-color:#44c767;
+			border-radius:5px; border:1px solid #18ab29;
+			padding:5px 8px; cursor: pointer;
+			margin-left: 60%; width: 20%;
+		} button#btnfwd:hover {
+			background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+			background-color:#5cbf2a;
+		}
+
+		/* Images styles */
+		div#maincont {
+			margin-top: 50px;
+		} div#maincont > h2 {
+			border-bottom: 2px solid #333;
+			margin-bottom: 10px;
+		}
+		div.imgcont {
+			display: grid;
+			grid-template-columns: [c1] 60% [c2] 40% [c3];
+			grid-template-rows: [r1] 30px [r2] auto [r3];
+			border-bottom: 2px solid #333;
+		} div.gridimg {
+			grid-column: c1 / c2;
+			grid-row: r1 / r3;
+		} div.gridinp {
+			grid-column: c2 / c3;
+			grid-row: r1 / r2;
+		} div.gridip {
+			grid-column: c2 / c3;
+			grid-row: r2 / r3;
+		} img.img {
+			width: 100%; height: auto;
+		} input.imginp {
+			width: 80%; margin-left: 10%;
+		} p.imgout {
+			width: 80%; margin-left: 10%;
+		} h2.imglbl {
+			text-align: center
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Escapapotato 2020</h1>
+		<p id="explain">
+			Agente Patate,<br><br>
+			L'année 2020 fut difficile, mais une dernière épreuve vous attends. Votre mission, si vous l'accepter, est de déchiffrer les énigmes tordues du maléfique Dr. Philoulou, savant fou chercheur/urgentiste juif, pour peut être parvenir à recuperer votre dernier cadeau.<br><br>
+			Le monde compte sur vous Agente Patate, entrez le mot de passe ici.
+		</p>
+
+		<input id="pwdinp" type="text" name="hash" placeholder="all lowercase...">
+		<p id="pwdout"></p>
+
+		<button id="btnfwd" style="display:none">Continuer</button>
+
+		<div id="maincont" style="display:none">
+			<h2 id="tit">17 beaux souvenirs [0/17]</h2>
+			<p>J'ai abandonné l'escape game, alors à la place devine la date des 17 souvenirs suivants pour débloquer mes commentaires. Si tu les as tous, tu auras une petite surprise ♥</p><br>
+			<div class="imgcont"><div class="gridimg"><img src="./img/howd.jpg" class="img"></div><div class="gridinp"><h2 class="imglbl">Devine le mois/année</h2><input class="imginp" id="howdI" type="text" placeholder="01/17"><p class="imgout" id="howdO"></p></div></div>
+			<div class="imgcont"><div class="gridimg"><img src="./img/awbm.jpg" class="img"></div><div class="gridinp"><h2 class="imglbl">Devine le mois/année</h2><input class="imginp" id="awbmI" type="text" placeholder="01/17"><p class="imgout" id="awbmO"></p></div></div>
+			<div class="imgcont"><div class="gridimg"><img src="./img/lunw.jpg" class="img"></div><div class="gridinp"><h2 class="imglbl">Devine le mois/année</h2><input class="imginp" id="lunwI" type="text" placeholder="01/17"><p class="imgout" id="lunwO"></p></div></div>
+			<div class="imgcont"><div class="gridimg"><img src="./img/yoii.jpg" class="img"></div><div class="gridinp"><h2 class="imglbl">Devine le mois/année</h2><input class="imginp" id="yoiiI" type="text" placeholder="01/17"><p class="imgout" id="yoiiO"></p></div></div>
+			<div class="imgcont"><div class="gridimg"><img src="./img/krib.jpg" class="img"></div><div class="gridinp"><h2 class="imglbl">Devine le mois/année</h2><input class="imginp" id="kribI" type="text" placeholder="01/17"><p class="imgout" id="kribO"></p></div></div>
+			<div class="imgcont"><div class="gridimg"><img src="./img/ailo.jpg" class="img"></div><div class="gridinp"><h2 class="imglbl">Devine le mois/année</h2><input class="imginp" id="ailoI" type="text" placeholder="01/17"><p class="imgout" id="ailoO"></p></div></div>
+			<div class="imgcont"><div class="gridimg"><img src="./img/oemu.jpg" class="img"></div><div class="gridinp"><h2 class="imglbl">Devine le mois/année</h2><input class="imginp" id="oemuI" type="text" placeholder="01/17"><p class="imgout" id="oemuO"></p></div></div>
+			<div class="imgcont"><div class="gridimg"><img src="./img/ruci.jpg" class="img"></div><div class="gridinp"><h2 class="imglbl">Devine le mois/année</h2><input class="imginp" id="ruciI" type="text" placeholder="01/17"><p class="imgout" id="ruciO"></p></div></div>
+			<div class="imgcont"><div class="gridimg"><img src="./img/lxvc.jpg" class="img"></div><div class="gridinp"><h2 class="imglbl">Devine le mois/année</h2><input class="imginp" id="lxvcI" type="text" placeholder="01/17"><p class="imgout" id="lxvcO"></p></div></div>
+			<div class="imgcont"><div class="gridimg"><img src="./img/esai.jpg" class="img"></div><div class="gridinp"><h2 class="imglbl">Devine le mois/année</h2><input class="imginp" id="esaiI" type="text" placeholder="01/17"><p class="imgout" id="esaiO"></p></div></div>
+			<div class="imgcont"><div class="gridimg"><img src="./img/siqi.jpg" class="img"></div><div class="gridinp"><h2 class="imglbl">Devine le mois/année</h2><input class="imginp" id="siqiI" type="text" placeholder="01/17"><p class="imgout" id="siqiO"></p></div></div>
+			<div class="imgcont"><div class="gridimg"><img src="./img/laro.jpg" class="img"></div><div class="gridinp"><h2 class="imglbl">Devine le mois/année</h2><input class="imginp" id="laroI" type="text" placeholder="01/17"><p class="imgout" id="laroO"></p></div></div>
+			<div class="imgcont"><div class="gridimg"><img src="./img/yvdy.jpg" class="img"></div><div class="gridinp"><h2 class="imglbl">Devine le mois/année</h2><input class="imginp" id="yvdyI" type="text" placeholder="01/17"><p class="imgout" id="yvdyO"></p></div></div>
+			<div class="imgcont"><div class="gridimg"><img src="./img/riiw.jpg" class="img"></div><div class="gridinp"><h2 class="imglbl">Devine le mois/année</h2><input class="imginp" id="riiwI" type="text" placeholder="01/17"><p class="imgout" id="riiwO"></p></div></div>
+			<div class="imgcont"><div class="gridimg"><img src="./img/eauj.jpg" class="img"></div><div class="gridinp"><h2 class="imglbl">Devine le mois/année</h2><input class="imginp" id="eaujI" type="text" placeholder="01/17"><p class="imgout" id="eaujO"></p></div></div>
+			<div class="imgcont"><div class="gridimg"><img src="./img/ujsw.jpg" class="img"></div><div class="gridinp"><h2 class="imglbl">Devine le mois/année</h2><input class="imginp" id="ujswI" type="text" placeholder="01/17"><p class="imgout" id="ujswO"></p></div></div>
+			<div class="imgcont"><div class="gridimg"><img src="./img/nbkm.jpg" class="img"></div><div class="gridinp"><h2 class="imglbl">Devine le mois/année</h2><input class="imginp" id="nbkmI" type="text" placeholder="01/17"><p class="imgout" id="nbkmO"></p></div></div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$("#pwdinp").on('change', function() {
+			var text = $("#pwdinp").val(); h = SHA256(text);
+			var t = '4ea511963388132dd56b3b23fdfa1a25b952a8fe958afc7938622a33156bebf3'
+			if (h == t) {
+				$("#pwdout").text('['+text + '] Accès authorisé!')
+				$("#btnfwd").show();
+			} else {
+				$("#pwdout").text('['+text + '] Accès refusé.')
+			}
+		})
+
+		$("#btnfwd").click( function () {
+			$("#maincont").show();
+		})
+
+		var res = [0,0,0,0,0, 0,0,0,0,0, 0,0,0,0,0, 0,0];
+		function update(n) {
+			res[n] = 1;
+			s = res.reduce((a, b) => a + b, 0);
+			$("#tit").text("17 beaux souvenirs ["+s+"/17]");
+			if (s == res.length) { alert( decrypt("Mj3)gNr1heç'7nççk kS)VwnyVrè3a7-9xc-;Mk0à-vhNè(çfJE)6tJ'7(lkçF6IgFPçBZ)V04é-Clro,jjhPt3L","Potato2021"))}
+		}
+
+		$("#howdI").on('change', function() { var text = $("#howdI").val(); h = SHA256(text); var t = '7ed8cb5b58109df60ce64cae03da3faf9be09713d7114dd218b9798399a55c0a'; if (h == t) { $("#howdO").text(decrypt("pV0CéV;6rVU-àmP-D'ù-5-oxétr2DTi(wnjLlMrkt-jh7PqâP♥Eeg4c-CIr'fVàs(è3ôrS,-me3.3 TC8UH33'(ç'Sà-7ëmLPNra6V6IéLrHlC'Lnm0grNCCçè6m6jlôt8Eôgdé-(NrôJè9h7cr(hCàU7Fi-CMB'♥y6C7-N(q♥EF0x6iBI'♥EM7n1Lqôro,j6;3-2'rTt:3ê69'M:oEi73iVrmt7)L6;acr(hCt.nmPgr!kâVV6d0Vr,q5J-9m0tro3CaLPëw--okâVVàx0grIh♥Ef7;nVràBaVèHx6wl6ret.34i-7NrgçFjn9Vrôzâ♥-nx6ôkMC6EMNnoVhHP♥N'6Vj","Potato2021")); update(0) } else { $("#howdO").text('['+text + '] Accès refusé.') }})
+		$("#awbmI").on('change', function() { var text = $("#awbmI").val(); h = SHA256(text); var t = 'ce427b69df6af0fc1bca181b058c8cf373fa43fa58f809db9fc49b24402f25f5'; if (h == t) { $("#awbmO").text(decrypt("HVNCP-DBrSçFinC(ùV CNb♥nijqmrçEnghgèC(TC!è6m6it(qob-9oH1q 3ôE.3nqùr BiJj6.jjB.kZ Vàx0grmkoEF0x6f3o7♥E1Nx6bNN-C b6InFqN9C♥LNh6b7o3ôE1g4é-7Okc,bé4NPr-)S6gènV',,7âS:in9FrH)Z,g6C7-O(hCa:8s3â3jrkJt6h7wl6hoEè3v7bqNhLE8NFiVrll,NVcFNtrH3C6LNFè-iOkâE:U37-;NrôJggdéè3MrebtP37jro3CVVc37-;Nrkt-o4n.3çkeJi63g' ç7SEPH3HLr5CSbg6I3trH3C6Lih7--(C8E:3e3","Potato2021")); update(1) } else { $("#awbmO").text('['+text + '] Accès refusé.') }})
+		$("#lunwI").on('change', function() { var text = $("#lunwI").val(); h = SHA256(text); var t = '227d1689d9d8a57c1d22aedc4473e8370d0925005946e5b32b9e487aa80b6394'; if (h == t) { $("#lunwO").text(decrypt("HVNCP-DSr ,'n;7grJJVlc6ePu3ç3!EhP3Nbh63FE9jh(trlN7bj6h3g)ç7♥EMHI3jCç;aEâébNô3ç;♥E.çmNf3M,♥ECgë6yClqLELmùNô)ç(7,t6;3--(l♥)g7êèS çB!EtçxcgrH)gbMHna-7N(CVbi3éb'NPCJè6ùgFPMk!)!6S (Oç'k,t6;g'hjrPtVn;7-k.k!NL0ë7-3 rôJèih7-Aç7JtFvxéâ3çkeJi6-0MPN(uEd0n3-FlqLE.7nJ'zNrçEBwn7tC6rc,V6:çbqç(aI!6!çV( rgJ-ybNjroACuF7niUkôr♥àt3pH-;NrZJeé47è;çl!EfHPH--(-Tçè6F3FNl,♥5-àmPtrôk!à-cdmi:ôrTt:3","Potato2021")); update(2) } else { $("#lunwO").text('['+text + '] Accès refusé.') }})
+		$("#yoiiI").on('change', function() { var text = $("#yoiiI").val(); h = SHA256(text); var t = 'b4dd521857650348450e68bd0db5ec86a0291951a9d65c44ddafb7c9ffde68a2'; if (h == t) { $("#yoiiO").text(decrypt("HVNCP-ùJr7aggPéVrJJVrc6;7-ONqk VNh6PBN7kJFZn3Fr8qLVL0n9Vr kC''7A6rhç,S)V3d6Lh8CaJFZN6PBI(oJFZN6b)M)tEMgdZ-3 rS,-'bNgrMkHâ'0Jè-iNrLfV0n3'rMk'JèHnNè3ç'SVg6C3è(çl!EgNIçcrNCCzV63çbqçP♥SbéCH-7lr'tè'xé!rtkCâbmx6twN(LEM7ùgP'((8Jc63N-CO3oEPPF6)r Baàt7h6VCçCaEbcnéV'((8E.7néV( 3CNF6v3g3llCJè6xctkak!)-9x6itlhhJj6C7-(Iç♥)-9x6iBgN♥Vt33PLhç;âàiéxiVONhL--5xc-ulzâ6âcncuqo7oEL036ek67kb-ix6glNPCaV6:gFPç7S-!","Potato2021")); update(3) } else { $("#yoiiO").text('['+text + '] Accès refusé.') }})
+		$("#kribI").on('change', function() { var text = $("#kribI").val(); h = SHA256(text); var t = '227d1689d9d8a57c1d22aedc4473e8370d0925005946e5b32b9e487aa80b6394'; if (h == t) { $("#kribO").text(decrypt("Lbàx9'rJùCzFP;nVCçD2U6wnnVr;3â .7dé-OI(8J-7)7jIçi♥EtN4c-'l(C)j(F6iloCaVV6xi-OI(8J-NFNb7oSC3bPF6i3olâE.3nHgk6CCbècm0Vrërytâéxv!r1(Lb-dd7-çOkâEjPF6bNN-C V6sPjP(qôEwN46P3M,♥E.7F61qôkhJtwngFr♥k♥ .7noVPôq76-'J3èCNIC9b6s7-Olhc,V6ëgtrèB6tâ7Fw-çOkâE:U37-;NrôJô3hi'PçkeJi63g'r!kâVV6;7-C(lôEMNnàLhH3tE'ioc-uN3!Eggb6.Bg,tEm7n0V3HrSEfPv6gP6'F","Potato2021")); update(4) } else { $("#kribO").text('['+text + '] Accès refusé.') }})
+		$("#ailoI").on('change', function() { var text = $("#ailoI").val(); h = SHA256(text); var t = '5b1f32c33daa9a99771e3f8587de6035c221cc1ff254246ac46a7ce6a1f3c445'; if (h == t) { $("#ailoO").text(decrypt(";'àm0itNr1EP3hc-D'ù-5-gë6b;('LJ-0bij3ç'ôJPPxé-kgq't.ènxèrm3Lbg6IgF7m3C''g;7grélâE17di-H P♥Ebc3éLhllLJc6ù7-'NCâ)-àb0tCM3Ct134i-7lrgéb0ù7-;Nr0VV0CéVrH3oEf340trlN♥a-ibPcrl77Vt6:çbqç)LI-ymnLl9r♥)-gë6br;k!Sy6F7tra3a7!6t3troB!S-3Ié2(çMS5-id6g3ç,♥)g7h3-lg3CzLvn3FrwlkbVi37!rw3CaLàIéVhHrLçFybNj(ç'Sà-mbàP3gCC)U7F6ôkôrmJ17ëNVr(uNàVèê6Tr;qoà-0béf3MCC):gê","Potato2021")); update(5) } else { $("#ailoO").text('['+text + '] Accès refusé.') }})
+		$("#oemuI").on('change', function() { var text = $("#oemuI").val(); h = SHA256(text); var t = '7ed8cb5b58109df60ce64cae03da3faf9be09713d7114dd218b9798399a55c0a'; if (h == t) { $("#oemuO").text(decrypt("ùbéCP-ùNPC3bPnC(ù) CzV6s7-CMk!àeghàVrNhC 'mbéè3ç'7,j63g'IçôJJtinNèrN(Lb-9x6âP((CN'nCg-AçP♥aVobPjrërVP-3ëccr;kâà-P;6LlèP♥E.3noLqNr0çFénnV(çh73féxNérllLVVcndFw(hC'b6Fçb-,3LJj2nVLhN(L ;wnyU3 kâà-jmc-Aç7Jt'cx6èBgr0 FcN6'7ç)Lt'inj.lôrhVLcndF3çO7b!èn5bqôrob-Në68BIPCTLNncgkMCCFb03Pè,çO7VVwnMV7oriJUn;6u3N'Cbg6méLlg;Cy0","Potato2021")); update(6) } else { $("#oemuO").text('['+text + '] Accès refusé.') }})
+		$("#ruciI").on('change', function() { var text = $("#ruciI").val(); h = SHA256(text); var t = '9e0a2d1362379d7bbc783c9757680fef734179d18e9ad018fbe034abb07fa905'; if (h == t) { $("#ruciO").text(decrypt("HVNCP-4ççabè6k 7xjr76-3s3MBI3C Vcnmbhg3Lçècn9FrokgE83hé;rlN♥a-9d6nq;ICvbcnnLh-rS♥j(Fw--O3o)-Në7-;(lEt'0x6M3ç-S6è73gè(ç8ab-o47èhNhLEègdc-'6hgJj6;7trmq♥Nt6moV-ç7♥,jcnjVC6CoEf7ùc!r1(Lb-ddç'7ôr8)bPx0gr!7aâe♥N68wllôt'6)gF7IrLçFcnnV(çkmçôixé!rdhCNVcnàLONhLà-nxc-'oloEP3vPwlN(CuF7nyUk6reIiNN6Vh8BôJ-'hUi3çAC)LPnz","Potato2021")); update(7) } else { $("#ruciO").text('['+text + '] Accès refusé.') }})
+		$("#lxvcI").on('change', function() { var text = $("#lxvcI").val(); h = SHA256(text); var t = '4e66f53a4767edaa23f8b6875523f71e03d3c217139194ba692affb61057f936'; if (h == t) { $("#lxvcO").text(decrypt("HVNCP-ù'rSçFinC(ù) C3L0nj2PNr!çFcngeFM3C U3ùi'N6C8E.3nj.lôrc,yimPè3ç3eJjènxèr BaV-9m0trokCSj3ë9VrMBaJ-9x6àBgCôJbnN6:3IP♥,t7s7èCç8aJ-yoHgk6(CJèmbéVrIhC♥VNniLlMqo)V6c6.w5'7uF7ê6hkçNaJ-H33'Cç'Sà-j4éV ç'Sà-3dctqçu♥ .7ndFwlljEV0ç3èCôrLJjé4v.3ôr't'cnmFCNr!çè73JV7N(o--âm6ôP(-Tt'0x6eB6(CuFçb0-Nlro,j6;7-'(PL5-Mxçj3ç;7bè'ni:3ç1â♥.Pë7-tltSé","Potato2021")); update(8) } else { $("#lxvcO").text('['+text + '] Accès refusé.') }})
+		$("#esaiI").on('change', function() { var text = $("#esaiI").val(); h = SHA256(text); var t = '4e66f53a4767edaa23f8b6875523f71e03d3c217139194ba692affb61057f936'; if (h == t) { $("#esaiO").text(decrypt("xF0CP-D'rSçFinC(ù) CzV6F0Vk7ra6V6IPirH3C)LPn7èr PSbè6C7-CNrHt'éx6ôkô(♥V-jbNjrIh♥EboxNâ7NrS'VmnàV(ç'SVV03c-kIr tj940-u(CS6'dd7!rtlC)U7ë6tBM(C♥bcnj'PNrS'VmniLhçuS)L0nv.kg-tEbjh(tr wS'LPh6ek6CC♥VNh6bNN-C,è7nà;,l7♥E)6;ç'hô3g)bé4NP çMSEP7n1bq rZbV0né'PNICjUn;6M3!q!bg7;♥-( qk -nboVraBaE'1n♥Llçu♥aLàx6f76hmEë","Potato2021")); update(9) } else { $("#esaiO").text('['+text + '] Accès refusé.') }})
+		$("#siqiI").on('change', function() { var text = $("#siqiI").val(); h = SHA256(text); var t = '5b1f32c33daa9a99771e3f8587de6035c221cc1ff254246ac46a7ce6a1f3c445'; if (h == t) { $("#siqiO").text(decrypt(";'àm0itNrVU-àmétrJJVlc6s3-'M3ouF7njj3;qNVV6çg'(ç3!Et0bM!rw3CàFPF6Vh8BôJ-oh3'ONhLEP3dobqô CzV63gPuNr0tt6s3.rNCCzV6)7Fàççaàg7n1bqM3CNVcnj'( 3oE17hiV(Lr;JFéxNt3;3!)-kë9j3ôr♥àg6;3-'(lôEAih7-'6P♥EwNx6PB6r♥)-àx6ek6P♥EfPx0-'lPSbgéx2-VôCâEwNx6gwl(CNF637-FlqôJ-mePVPçkTt:wnmLO.q♥6-9x6eB6(C2è9h7trN(LEggsvyrHlC)'éx6e3ô(♥Eôgdé-z6;oEéôn69ha6ST-J1iVrHw6Ej73gFPg3ôEboxm-C(qCaVi37-kgh8Jc6IéLO6(Cçè6ç7jkç;♥à-j4cg3ôrH,ècA2","Potato2021")); update(10) } else { $("#siqiO").text('['+text + '] Accès refusé.') }})
+		$("#laroI").on('change', function() { var text = $("#laroI").val(); h = SHA256(text); var t = '0588144714102adbfa53fdd5f98fb162ce6535c2564ee753102c10e2b6d4d105'; if (h == t) { $("#laroO").text(decrypt(";'àm0itNrVr-àmP-D'D25-gë6i)o)ZVV6ëgtrJrS6t6xi-!çO7bt6moV-çl!J-jxi'CNrZt.3C7-3greI.gN6mtlCCt-nboV7armtg7A633N7oEâéx3grH3CàLé3Pjrër!çFox3Frl'ôOt6;7--(hHbè7s7èCjrâ -1mPgr.3S,c6b0-'68aJ-04dF3ç;♥éLéFw-çNr0IM3;7-;NPôb2éx6gB6r0çFénm:38z♥V-ixc-FN(oJtwnm.k6P♥3V036FhNr çFéëHVrmkôâbP37!rw3C'VNâ6j3 BaVè7h6ek6P♥EMNnoy7(rS'VmniLqçkaEôé40g3;'oq","Potato2021")); update(11) } else { $("#laroO").text('['+text + '] Accès refusé.') }})
+		$("#yvdyI").on('change', function() { var text = $("#yvdyI").val(); h = SHA256(text); var t = '0f5c22f4102b791dabdc2fab47bc3071014ded338f3245c9c277c9db2e28e4cd'; if (h == t) { $("#yvdyO").text(decrypt(";'àm0itNrùEMHù7PuM3Cd(LDw-CIr0çt7F6M3èk!)-nx6tkmq!EiJxT-CN(C♥béx0g(LrsJgix6bhg)♥5-jbNjrokC♥j7sP2PNrHç'cN6LhçNSEeE37jr:BA -7ëcVO.7♥5-me7lr Bâq-Dd6tk6(C)j3ëcP3 CôJ-nm6Pk-q♥EM7nBLeorS,ggdé-;NrLç'wnjbP83CuF7nmVr;B'JèinHgk6CC3b'4dF3ç,ôZi7na-C(quE0gsàb,Nrc,Ugë6.3ç'abtcx6ôkôrkJ-1 iVPç3!àVàPnVr83L)V6m0è)N Cçè6F7-PlCLVbjxébrlN♥a-Në7-ClPLbenxig3ç8atè9nyVrmBaVj346j3ô(7VgPh6ê9","Potato2021")); update(12) } else { $("#yvdyO").text('['+text + '] Accès refusé.') }})
+		$("#riiwI").on('change', function() { var text = $("#riiwI").val(); h = SHA256(text); var t = 'e7ff90f7455141740fb6bf323ed2272acb04c0f7f8b67139c8b14833bd237c7d'; if (h == t) { $("#riiwO").text(decrypt(";'àm0itNràE8N40-D'ùà5-nm6P367kJFéx6Mk 3CJ17h6blç-♥Vbà4m--lF8--AO6iwN(LEié4ct3;3!)-ddHgk6h♥5-àmPtrN(Lb-dd7--O)Lt'in9jBo3uEd0n3-'Irgçè14éP3MrgJ-ybNjrokCuF7niFrN(C,è7nàVqo7♥,j7n3jC6(LJ-dd7-O(qCuF3ë9-qorofb'4i-;Nr0J'03Nj3ç3LEM7Fc'hjrçE.ç4àb,NrmJ-0bij3ç;aJ.6C7--lPâabidéVrllCcjP37-♥oBôà-g56glçket'cnmjlôt♥N-àp6t3oFCJtix7PrlN♥a-ixc-;Mkibè'ncuqo7oE:3e3:k","Potato2021")); update(13) } else { $("#riiwO").text('['+text + '] Accès refusé.') }})
+		$("#eaujI").on('change', function() { var text = $("#eaujI").val(); h = SHA256(text); var t = '170700c93f33a86c4e8068d30920fab321536a3894046d43595c2a46b39f32c2'; if (h == t) { $("#eaujO").text(decrypt("Lbàx9'r2ùCzb0)PVPçD2d(wnnbrmqôJ-3ë0y3ç3eJj6ùgPONhgJ-jbNjClhLEfPx0!rtlCNymbN1PN(C b6)ébqNrLVb94i'BgrmJt6v3.3 C♥à-9xc-P(qo5-736glç3oEynd7-PNq!J-9x6.kçFôtè'4jbhNIC(è6InF(jr76-éxo'3gCCNV6ëggPNreç;3v7-3grM .7s3âhN CgFinPgwôrS .6Cgmh,qk -1hgPr t♥VVèê6pwlqCéJix6M3çP♥♥bé33â3Mra6V6v3.3 C♥Eboxm-C(qC3bPF68wN(0Oj7ndF3ç-♥Et7h3-O(qC V6hg'r83L)V6çg'(ç-âEDj","Potato2021")); update(14) } else { $("#eaujO").text('['+text + '] Accès refusé.') }})
+		$("#ujswI").on('change', function() { var text = $("#ujswI").val(); h = SHA256(text); var t = 'c6b84487071215bcc19a66e1edfdac2b11395735726148a407f35ca4eca398d6'; if (h == t) { $("#ujswO").text(decrypt("ùVéùéV;6rfê-gùiLuM3Cd(Lqw-CIr♥à-gç1'-63k Vàx0gr;Bâ6t6véL(ô3CuFçd0-kè3ôtâ7n3P3Mqgtè6OPMIçy!Et7h3'Cç'ôçf3PnVONhLEj7ëij)çACNVNâ6Mkg(CaVi37-ul7S6ig4éV ç3LEtPnmU) kâ)-Në6ô3Ir0 Fcn9'(8P♥)-mbàP3ç3!Njg4icr(hCtFémPgrmlCJtcm♥yrIh♥EigdjVrH3C6LN)7.7N(C♥Lc4i'Bg(CébJmè-♥grSFVcbàVr Pâ♥-7ëmLPN CzU346:c 3CNV6h7gBIP!Jj6mNér5CS)t6F7-O(8aJj6C7trM3m6VmOc-kè3gEgg46ë","Potato2021")); update(15) } else { $("#ujswO").text('['+text + '] Accès refusé.') }})
+		$("#nbkmI").on('change', function() { var text = $("#nbkmI").val(); h = SHA256(text); var t = '39ec6d2cf4788d9039a6d325a232a6ed85d17d4ed46dc948f21eee39d515b9ae'; if (h == t) { $("#nbkmO").text(decrypt("pV0CéV;6rV.-1JojqNPCd(LDw--O3o)-mx6tB6PCuF7niLl rSEigsàVh8)C4-0bN13lluEpçmP-3ô(STy6C7-C(lLJt6s7tr!BôaVcn9Vr 3C'Lnxé-AçLTbf3dngrNhCàLé33èCçO♥à-j;Ntr-P7à-jmégSç(5b.nF6VCçt6♥b036gBICC V6sgè;Nr0çtc4v.3ç'7,j62NVr lCVVc37trlN♥a-0bNtIç♥!Nj7F6yClqLEF0n5zdç-♥Etg4é-AçF7 .gB6F'çkeJi6;7-(7StEVinyVr;3CàFPF6y'678E.7ni'u6kC♥LNh6gB6rB1b6m6MlM)CP-àbPt ç3LEV0nj.lôr fbomPtrM)aàtPna-,l,!Jj6;3-,lO♥EM7n,çrlN♥a-ibP-;lhoEPgë6y8Iq0JSènqVrôBâV-ncw-NNPoEa3sw-çNrLfbPn7PuMkoàyën7grgBaà-obP.kç'ôJtdd7-!çk!à-j;Ntr kôN-z","Potato2021")); update(16) } else { $("#nbkmO").text('['+text + '] Accès refusé.') }})
+
+
+	</script>
+
+</body>
